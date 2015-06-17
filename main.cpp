@@ -42,6 +42,7 @@
 #include <time.h>
 #include <signal.h>
 #include <stdlib.h>
+#include <getopt.h>
 using namespace std;
 
 const string USAGOVSTREAMURL = "http://developer.usa.gov/1usagov";

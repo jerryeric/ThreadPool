@@ -13,6 +13,8 @@
 #include "USAGovClickReader.h"
 #include <curl/curl.h>
 #include <thread>
+#include <mutex>
+#include <condition_variable>
 #include <string>
 #include <queue>
 

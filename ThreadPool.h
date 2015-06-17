@@ -25,6 +25,8 @@
 #define THREADPOOL_H_
 
 #include<thread>
+#include<mutex>
+#include<condition_variable>
 #include<queue>
 #include<vector>
 #include<Task.h>
