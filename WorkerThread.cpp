@@ -17,6 +17,7 @@ void WorkerThread::start()
 {
 	// Create the thread and make it run the run() function
 	t = thread(&WorkerThread::run, this);
+	t.detach();
 }
 
 void WorkerThread::run()

@@ -166,7 +166,7 @@ int main(int argc, char* argv[])
 		if(interval>0)
 			std::this_thread::sleep_for( std::chrono::milliseconds(interval) );
 	}
-	pool.stop();
+	//pool.stop();
 
 	clock_gettime(CLOCK_MONOTONIC, &finish);
 
