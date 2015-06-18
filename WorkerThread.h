@@ -37,10 +37,10 @@ public:
 	virtual ~WorkerThread();
 
 	// Start the thread
-	void start();
+	void start();	
 private:
 	// The function that will be run by the thread.
-	void run();
+	void run();	
 };
 
 #endif /* WORKERTHREAD_H_ */

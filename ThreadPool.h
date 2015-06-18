@@ -47,6 +47,9 @@ class ThreadPool {
 	// The number of worker threads
 	unsigned int numWorkers;
 
+	//The flag to stop all the thread (when it's false)
+	bool online;
+
 	// The worker threads
 	std::vector<WorkerThread*> workers;
 

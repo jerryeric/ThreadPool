@@ -22,13 +22,13 @@ USAGovClickData::~USAGovClickData() {
 }
 
 void USAGovClickData::updateData(USAGovClick &click)
-{
-    clickdata_mutex.lock();
+{   lock_guard<mutex> lock(clickdata_mutex);
+    //clickdata_mutex.lock();
 	numClicks++;
 	if(!click.isKnown())
 		numNew++;
 	countries[click.getCountryCode()] += 1;
-    clickdata_mutex.unlock();
+    //clickdata_mutex.unlock();
 }
 
 stringCountMap& USAGovClickData::getCountries() {
